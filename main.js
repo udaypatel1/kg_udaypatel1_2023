@@ -1,4 +1,5 @@
 
+// grab command line inputs
 let numsList = process.argv;
 const startPos = 2;
 
@@ -6,6 +7,7 @@ if(numsList.length === startPos){
     return;
 }
 
+// remove file standard command line inputs from value array (the first two)
 numsList.shift();
 numsList.shift();
 
@@ -23,6 +25,7 @@ numberMap.set("7", "Seven");
 numberMap.set("8", "Eight");
 numberMap.set("9", "Nine");
 
+// parse string form of inputs to phonetic meaning
 function numberToPhonetic(numberString, numberMap){
 
     resultString = "";
@@ -36,6 +39,7 @@ function numberToPhonetic(numberString, numberMap){
 
         let phoneticWord = numberMap.get(numberString[idx]);
 
+        // return invalid if anything besides 0-9 is given as input
         if(phoneticWord === undefined){
             return "invalid";
         }
