@@ -31,6 +31,7 @@ function numberToPhonetic(numberString, numberMap){
         }
         else{
             resultString += numberMap.get(numberString[idx]);
+
         }
     }
 
@@ -38,5 +39,7 @@ function numberToPhonetic(numberString, numberMap){
 
 }
 
+let finalString = numberToPhonetic(numsListString, numberMap);
+process.stdout.write(finalString);
 
 
