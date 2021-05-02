@@ -1,12 +1,15 @@
 
 let numsList = process.argv;
+const startPos = 2;
+
+if(numsList.length === startPos){
+    return;
+}
 
 numsList.shift();
 numsList.shift();
 
 let numsListString = numsList.join();
-
-//process.stdout.write(numsListString);
 
 let numberMap = new Map();
 
