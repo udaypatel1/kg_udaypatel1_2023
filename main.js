@@ -15,6 +15,7 @@ let numsListString = numsList.join();
 
 let numberMap = new Map();
 
+numberMap.set("0", "Zero");
 numberMap.set("1", "One");
 numberMap.set("2", "Two");
 numberMap.set("3", "Three");
