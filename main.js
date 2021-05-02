@@ -28,10 +28,16 @@ function numberToPhonetic(numberString, numberMap){
 
         if(numberString[idx] === ","){
             resultString += ",";
+            continue;
+        }
+
+        let phoneticWord = numberMap.get(numberString[idx]);
+
+        if(phoneticWord === undefined){
+            return "invalid";
         }
         else{
             resultString += numberMap.get(numberString[idx]);
-
         }
     }
 
