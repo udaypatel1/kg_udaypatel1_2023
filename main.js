@@ -45,7 +45,7 @@ function numberToPhonetic(numberString, numberMap){
             return "invalid";
         }
         else{
-            resultString += numberMap.get(numberString[idx]);
+            resultString += phoneticWord;
         }
     }
 
